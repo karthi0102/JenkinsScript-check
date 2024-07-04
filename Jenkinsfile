@@ -10,7 +10,7 @@ pipeline{
             steps{
                 script{
                     
-                    def status = sh(script: 'one.sh', returnStatus: true)
+                    def status = sh(script: './one.sh', returnStatus: true)
                     if(status == 0){
                         echo "exiting"
                         return
