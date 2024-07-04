@@ -10,7 +10,7 @@ pipeline{
             steps{
                 script{
                     sh '''
-                        apt update -y
+                        sudo apt update -y
                     '''
                     def status = sh(script: 'one.sh', returnStatus: true)
                     if(status == 0){
