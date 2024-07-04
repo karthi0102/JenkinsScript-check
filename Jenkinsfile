@@ -1,4 +1,4 @@
-pipleine{
+pipeline{
     agent{
         docker{
             image 'ubuntu:20.04'
